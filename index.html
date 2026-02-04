@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .strikethrough {
+            text-decoration: line-through;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h2>Quản lý Posts</h2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>VIEWS</th>
+                    <th>DELETED</th>
+                </tr>
+            </thead>
+            <tbody id="body_table">
+
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <input type="text" id="id_txt" placeholder="ID (để Update)" />
+        <input type="text" id="title_txt" />
+        <input type="text" id="view_txt" />
+        <input type="submit" value="Save" onclick="Save()">
+    </div>
+
+    <hr>
+    <h2>Quản lý Comments</h2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TEXT</th>
+                    <th>POST ID</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="body_comments">
+            </tbody>
+        </table>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <input type="text" id="comment_id_input" placeholder="ID (để Update)" />
+        <input type="text" id="comment_text_txt" placeholder="Nội dung comment" />
+        <input type="text" id="comment_postId_txt" placeholder="ID của bài viết" />
+        <input type="submit" value="Save Comment" onclick="SaveComment()">
+    </div>
+</body>
+
+</html>

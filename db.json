@@ -1,0 +1,44 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "another title",
+      "views": 200,
+      "isDeleted": true
+    },
+    {
+      "title": "Toi la gay",
+      "views": "32",
+      "id": "2"
+    },
+    {
+      "title": "Toi la gay3",
+      "views": 222,
+      "isDeleted": false,
+      "id": "3"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1",
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    },
+    {
+      "text": "Toi la gay2",
+      "postId": "2",
+      "isDeleted": false,
+      "id": "3"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
